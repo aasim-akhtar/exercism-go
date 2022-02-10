@@ -2,9 +2,13 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main () {
-	var expression bool = false && !(true && false)
-	fmt.Println(expression)
+	x := "boo ****"
+	var newString string = x
+    newString = strings.ReplaceAll(newString,"*", " ")
+    // strings.TrimSpace(newString)
+    fmt.Println("DEBUGINFO: " + newString)
 }
